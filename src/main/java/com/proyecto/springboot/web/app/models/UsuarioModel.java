@@ -6,7 +6,28 @@ public class UsuarioModel {
 	
 	private String nombre;
 	private String apellido;
+	private String mail;
 	
+	
+	
+	public UsuarioModel() {
+	}
+
+	public UsuarioModel(String nombre, String apellido, String mail) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.mail = mail;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
