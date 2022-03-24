@@ -41,4 +41,9 @@ public class inicioController {
 		modelo.addAttribute("usuarios", usuarios);
 		return "listar";
 	}
+	
+	/*
+	 * tambien se puede usar el @modelAtributte("varName") para enviar datos.
+	 * este generaliza el uso de la variable, cada vez que se use "varName" llamara a los datos que retorne.
+	 */
 }
