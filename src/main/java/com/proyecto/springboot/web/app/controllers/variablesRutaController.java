@@ -9,10 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/variables")
 public class variablesRutaController {
-
-	@GetMapping("/string/{paramUno}")
-	public String variables(@PathVariable String paramUno, Model modelo) {
-		modelo.addAttribute("resultado", " la variable por ruta:  " + paramUno);
+	
+	@GetMapping("/")
+	public String variables(Model modelo) {
+		modelo.addAttribute("titulo", "multiples variables por ruta");
+		//modelo.addAttribute("resultado", "variables");
+		return "variables/indexVariables";
+	}
+	
+	
+	// para enviar solo un parametro: borrar paramsDos de la ruta y de los parametros de la funcion 
+	@GetMapping("/string/{paramUno}/{paramDos}")
+	public String variables(@PathVariable String paramUno, @PathVariable Integer paramDos, Model modelo) {
+		modelo.addAttribute("resultado", " la variable por ruta:  " + paramUno + " el parametro 2: " + paramDos);
 		return "variables/ver";
 	}	
 }

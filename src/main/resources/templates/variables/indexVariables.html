@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}">Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<ul>
+		<li>
+			<a th:href="@{/variables/string/'primera variable'/80}" > ruta con varias variables </a>
+		</li>
+	</ul>
+</body>
+</html>
