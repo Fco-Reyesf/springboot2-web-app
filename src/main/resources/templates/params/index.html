@@ -11,7 +11,10 @@
 			<a th:href="@{/params/string(texto='valor parametro 1')}"> Enviar el primer parametro</a>
 		</li>
 		<li>
-			<a th:href="@{/params/string(texto='valor parametro 2')}"> Enviar el segundo parametro </a>
+			<a th:href="@{/params/varios-params(paramUno='soy el primero', paramDos = 2)}"> Enviar varios parametros </a>   /varios-params-request
+		</li>
+		<li>
+			<a th:href="@{/params/varios-params-request(paramUno='soy el primero', paramDos = 2)}"> Enviar varios parametros </a>
 		</li>
 	</ul>
 	
