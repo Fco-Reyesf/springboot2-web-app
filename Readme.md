@@ -4,7 +4,7 @@ Proyecto básico para entender spring
 
 # Herramientas necesarias para ejecutar
 
-- openJDK (cualquier version)  :  configurar como variable de sistema
+- [openJDK](https://openjdk.java.net/) (cualquier version)  :  configurar como variable de sistema
 - [Spring tool idle](https://spring.io/tools) (utilice el de eclipse)
 
 
