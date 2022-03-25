@@ -1,3 +1,13 @@
+# Introducción 
+
+Proyecto básico para entender spring
+
+# Herramientas necesarias para ejecutar
+
+- openJDK (cualquier version)  :  configurar como variable de sistema
+- [Spring tool idle](https://spring.io/tools) (utilice el de eclipse)
+
+
 # Proceso compilación JAR y ejecución.
 
 Comando para crear el JAR, debe encontrarse en el rais del proyecto.
